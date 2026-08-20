@@ -1,0 +1,10 @@
+family,case,result,value
+discount,"r_high=14%, r_low=12%",alpha*(RRG>=0.70) = 0.7,0.8479162460461672
+discount,"r_high=18%, r_low=12%",alpha*(RRG>=0.70) = 0.87,0.7115491345520136
+discount,"r_high=25%, r_low=8%",alpha*(RRG>=0.70) = None,
+cap,S-bar=$250k,"RRG(0.75)=0.252, RRG(0.90)=0.881",
+cap,S-bar=$400k,"RRG(0.75)=0.245, RRG(0.90)=0.803",
+climate,RCP2.6,RRG(0.75)=0.202,0.20183142593005832
+climate,RCP4.5,RRG(0.75)=0.261,0.2613052074566814
+climate,RCP8.5,RRG(0.75)=0.510,0.5100103414492544
+climate,expectation,RRG(0.75)=0.252,0.25160386830840775
