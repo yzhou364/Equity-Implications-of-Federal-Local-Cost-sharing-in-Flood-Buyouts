@@ -18,11 +18,13 @@ import population
 import model
 
 # program -> (model region, effective alpha, cap, observed rate)
+# All four programs effectively covered the local cost share with state or
+# CDBG-DR funds, so the homeowner-facing federal/state share is 1.0.
 PROGRAMS = {
-    "Staten Island (Sandy)":   ("Staten Island", 1.00, 350_000, 0.082),
-    "Harris County (Harvey)":  ("Houston",       0.90, 250_000, 0.045),
-    "NJ Blue Acres":           ("Norfolk",       0.95, 250_000, 0.068),
-    "Charlotte-Mecklenburg":   ("Charleston",    1.00, 300_000, 0.121),
+    "Staten Island (Sandy)":   ("Staten Island", 1.00, 250_000, 0.082),
+    "Harris County (Harvey)":  ("Houston",       1.00, 250_000, 0.045),
+    "NJ Blue Acres":           ("Norfolk",       1.00, 250_000, 0.068),
+    "Charlotte-Mecklenburg":   ("Charleston",    1.00, 350_000, 0.121),
 }
 
 

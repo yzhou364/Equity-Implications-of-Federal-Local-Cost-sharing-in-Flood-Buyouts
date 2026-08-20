@@ -26,7 +26,7 @@ def build_population(seed: int = C.SEED) -> pd.DataFrame:
 
         # Flood hazard: baseline expected annual damage ratio d_h.
         in_fp = rng.random(n) < exposure
-        d0 = C.D0_GLOBAL * np.exp(-elev / C.ELEV_SCALE)
+        d0 = C.D0_GLOBAL * np.exp(-elev / C.ELEV_SCALE) + C.PLUVIAL.get(name, 0.0)
         z = rng.lognormal(0.0, C.D_SIGMA, n)
         d = d0 * z * np.where(in_fp, 1.0, C.D_OUT_FRACTION)
 

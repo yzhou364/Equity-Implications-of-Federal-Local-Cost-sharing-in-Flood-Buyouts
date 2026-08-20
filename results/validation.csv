@@ -1,5 +1,5 @@
 program,model_region,alpha,observed,predicted,error
 Staten Island (Sandy),Staten Island,1.0,0.082,0.15892857142857142,0.9381533101045294
-Harris County (Harvey),Houston,0.9,0.045,0.0,-1.0
-NJ Blue Acres,Norfolk,0.95,0.068,0.03969912244045132,-0.416189375875716
+Harris County (Harvey),Houston,1.0,0.045,0.05353846153846154,0.18974358974358985
+NJ Blue Acres,Norfolk,1.0,0.068,0.06602590890096113,-0.029030751456453993
 Charlotte-Mecklenburg,Charleston,1.0,0.121,0.08382978723404255,-0.30719184104097064

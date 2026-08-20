@@ -65,6 +65,10 @@ C_PROP = 0.3453
 # ---------------------------------------------------------------------------
 D0_GLOBAL = 0.02095  # baseline EAD ratio at sea level, in-floodplain
 ELEV_SCALE = 6.0       # e-folding elevation for flood hazard (m)
+# Pluvial (rainfall-driven) hazard floor, independent of elevation. Houston's
+# flood risk is predominantly pluvial/riverine (Hurricane Harvey), which the
+# coastal SLR-elevation gradient alone would understate.
+PLUVIAL = {"Houston": 0.011}
 D_SIGMA = 0.30  # lognormal dispersion of household hazard
 D_OUT_FRACTION = 0.10  # out-of-floodplain hazard relative to in-floodplain
 BETA_SLR = 0.89  # damage amplification per metre of sea-level rise
