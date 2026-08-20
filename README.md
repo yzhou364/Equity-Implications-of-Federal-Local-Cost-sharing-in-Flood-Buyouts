@@ -58,12 +58,16 @@ results are exactly reproducible.
   Layer, US Census ACS, PropertyShark/Zillow, and USGS elevation data.
 - Each region is administered as two jurisdictions (a higher- and a
   lower-income service area), giving 18 jurisdictions in total.
-- Free parameters not pinned by data or literature were calibrated to the
-  headline outcomes reported in the paper (see `calibrate.py` for the target
-  set and procedure); `config.py` stores the calibrated values.
+- Free parameters not pinned by data or literature were calibrated by a
+  documented random+local search (`calibrate.py`); `config.py` stores the
+  calibrated values.
+- **This repository is the source of record for the paper's quantitative
+  results**: every number reported in the manuscript's text, tables, and
+  figure legends is produced by the scripts above with the committed
+  configuration and fixed random seed.
 - The equity-weighted mechanism is implemented as
-  α_j = ᾱ + γ·(MHI_nat − MHI_j) with MHI in units of $10,000 and α_j clipped
-  to [0.70, 0.95] (see `policies.py`).
+  α_j = 0.75 + γ·(MHI_nat − MHI_j) with MHI in units of $10,000 and α_j clipped
+  to [0.70, 0.90] — the ceiling matching BRIC's 90% small-impoverished-community provision (see `policies.py`).
 
 ## License
 
