@@ -30,7 +30,7 @@ def build_population(seed: int = C.SEED) -> pd.DataFrame:
         z = rng.lognormal(0.0, C.D_SIGMA, n)
         d = d0 * z * np.where(in_fp, 1.0, C.D_OUT_FRACTION)
 
-        # Discount rates by income group (Warner & Pleeter 2001; Bier et al. 2019)
+        # Discount rates by income group (Warner & Pleeter 2001; Bier et al. 2020)
         r = np.where(low_income, C.R_HIGH, C.R_LOW)
 
         # Two jurisdictions per region: households sorted into a lower- and a
