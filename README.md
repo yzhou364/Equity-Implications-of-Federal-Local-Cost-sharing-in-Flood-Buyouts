@@ -44,6 +44,7 @@ pip install -r requirements.txt   # numpy, pandas, matplotlib
 python experiments/run_baseline.py              # Figure 1–2, RRG benchmarks
 python experiments/run_policies.py              # Figure 4 comparison
 python experiments/run_sensitivity.py           # sensitivity analyses
+python experiments/run_validation.py            # Table 2 validation
 python experiments/run_selection_robustness.py  # SM §S3.5 check
 python figures.py                               # regenerate figures
 ```
